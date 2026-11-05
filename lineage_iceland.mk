@@ -13,6 +13,13 @@ $(call inherit-product, device/oneplus/iceland/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
+# Evolution X
+EVO_BUILD_TYPE := Unofficial
+WITH_GMS := true
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_BOOT_ANIMATIONS := true
+TARGET_BOOT_ANIMATION_RES := 1440
+
 PRODUCT_NAME := lineage_iceland
 PRODUCT_DEVICE := iceland
 PRODUCT_MANUFACTURER := OnePlus
